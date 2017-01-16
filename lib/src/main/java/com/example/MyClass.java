@@ -14,9 +14,9 @@ public class MyClass {
     public static void main(String[] args) {
         Map map = new HashMap();
         map.put("canOpen", true);
-        //推送类型 :0表示首次预约推送,1表示续约推送,2表示服务器推送消息过来,获取客户端机器运行情况
+        //a:推送类型 :0表示首次预约推送,1表示续约推送,2表示服务器推送消息过来,获取客户端机器运行情况
         int a =0;
-        String          dStr = "2017.01.16-14.06.00";
+        String          dStr = "2017.01.16-16.04.00";
         SimpleDateFormat sdf  = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
         Date             d    = null;
         try {
@@ -42,7 +42,7 @@ public class MyClass {
                 map.put("openId", "oN3A3wqbVrITX53zeLLdOumeqbm0");
                 break;
             default:
-                map.put("title", "dyp");
+                map.put("title", "machineInfo");
                 break;
         }
         String json = JSON.toJSONString(map);
