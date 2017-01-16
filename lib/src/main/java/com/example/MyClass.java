@@ -16,7 +16,7 @@ public class MyClass {
         map.put("canOpen", true);
         //a:推送类型 :0表示首次预约推送,1表示续约推送,2表示服务器推送消息过来,获取客户端机器运行情况.
         int a =0;
-        String          dStr = "2017.01.16-16.04.00";
+        String          dStr = "2017.01.16-17.45.00";
         SimpleDateFormat sdf  = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
         Date             d    = null;
         try {
@@ -47,7 +47,7 @@ public class MyClass {
         }
         String json = JSON.toJSONString(map);
         //初次String channelId = "3790788674348992420";
-        String channelId = "4210186328531208892";
+        String channelId = "3503909180827328603";
         try {
             BaiduPushUtil.pushMsg(json,channelId);
         } catch (PushClientException e) {
