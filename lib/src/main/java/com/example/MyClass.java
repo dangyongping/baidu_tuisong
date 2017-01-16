@@ -14,7 +14,7 @@ public class MyClass {
     public static void main(String[] args) {
         Map map = new HashMap();
         map.put("canOpen", true);
-        //推送类型
+        //推送类型 :0表示首次预约推送,1表示续约推送,2表示服务器推送消息过来,获取客户端机器运行情况
         int a =0;
         String          dStr = "2017.01.16-14.06.00";
         SimpleDateFormat sdf  = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
