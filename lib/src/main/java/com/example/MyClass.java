@@ -16,7 +16,7 @@ public class MyClass {
         map.put("canOpen", true);
         //a:推送类型 :0表示首次预约推送,1表示续约推送,2表示服务器推送消息过来,获取客户端机器运行情况.
         int a =0;
-        String          dStr = "2017.01.16-17.45.00";
+        String          dStr = "2017.01.17-08.45.00";
         SimpleDateFormat sdf  = new SimpleDateFormat("yyyy.MM.dd-HH.mm.ss");
         Date             d    = null;
         try {
